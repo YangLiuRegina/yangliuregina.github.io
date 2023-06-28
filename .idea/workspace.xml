@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="2f9ed2ba-af20-4b7a-b85b-dcfecf3361ae" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/_posts/zh/2019-08-11-ceshi2.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/en/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tianyu_CV.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/Tianyu_CV.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tianyu_CV_Chinese.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/Tianyu_CV_Chinese.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tianyu_resume.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/Tianyu_resume.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tianyu_resume_Chinese.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/Tianyu_resume_Chinese.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/_config.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/post-paginator.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/post-paginator.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/_layouts/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/en/_posts/2019-08-09-getting-started.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/en/2019-08-09-getting-started.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/en/_posts/2019-08-09-testing.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/en/2019-08-09-testing.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/en/index.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zh/_posts/2019-08-09-ceshi2.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zh/_posts/2019-08-09-getting-kaishi.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/zh/2019-08-10-getting-kaishi.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zh/_posts/2022-10-18-recipt-boiled-egg.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/zh/2022-10-18-recipt-boiled-egg.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zh/index.md" beforeDir="false" afterPath="$PROJECT_DIR$/zh/index.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="CSS File" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1fxzX0HGp9MouejlVKtt5I6DiOH" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder2" value="2" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder3" value="3" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="189" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="189" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="190" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="189" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder0" value="0" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder1" value="1" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="189" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="189" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="190" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="189" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SearchEverywhereHistoryKey" value="color pic&#9;ACTION&#9;ShowColorPicker&#10;color picker&#9;ACTION&#9;ShowColorPicker" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Work\skyu0221.github.io" />
+      <recent name="D:\Work\skyu0221.github.io\zh\_posts" />
+      <recent name="D:\Work\skyu0221.github.io\zh\_posts\recipe" />
+      <recent name="D:\Work\skyu0221.github.io\en" />
+      <recent name="D:\Work\skyu0221.github.io\_posts" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Work\skyu0221.github.io\blog" />
+      <recent name="D:\Work\skyu0221.github.io\zh\_posts" />
+      <recent name="D:\Work\skyu0221.github.io\en" />
+      <recent name="D:\Work\skyu0221.github.io" />
+      <recent name="D:\Work\skyu0221.github.io\zh" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2f9ed2ba-af20-4b7a-b85b-dcfecf3361ae" name="Default" comment="" />
+      <created>1550677965931</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1550677965931</updated>
+      <workItem from="1550677967192" duration="3811000" />
+      <workItem from="1551040493097" duration="10550000" />
+      <workItem from="1551086190693" duration="5540000" />
+      <workItem from="1551127809484" duration="10798000" />
+      <workItem from="1551255979075" duration="1464000" />
+      <workItem from="1597174571054" duration="835000" />
+      <workItem from="1597246812191" duration="14927000" />
+      <workItem from="1597346507245" duration="358000" />
+      <workItem from="1606757189875" duration="650000" />
+      <workItem from="1606769191586" duration="1613000" />
+      <workItem from="1606933452578" duration="27292000" />
+      <workItem from="1606967042735" duration="5139000" />
+      <workItem from="1607032997983" duration="1508000" />
+      <workItem from="1607034584402" duration="479000" />
+      <workItem from="1607035210872" duration="3029000" />
+      <workItem from="1607038690297" duration="12293000" />
+      <workItem from="1607099957687" duration="16204000" />
+      <workItem from="1608761953708" duration="422000" />
+      <workItem from="1634677979515" duration="6063000" />
+      <workItem from="1640733941301" duration="597000" />
+      <workItem from="1646673581668" duration="99000" />
+      <workItem from="1646673702048" duration="179000" />
+      <workItem from="1666156027151" duration="3081000" />
+      <workItem from="1666227931704" duration="81000" />
+      <workItem from="1666231412454" duration="3847000" />
+      <workItem from="1666291646762" duration="4673000" />
+      <workItem from="1667266385445" duration="9000" />
+      <workItem from="1670095702770" duration="622000" />
+      <workItem from="1673913658284" duration="1957000" />
+      <workItem from="1673940529128" duration="2000" />
+      <workItem from="1673949342582" duration="1679000" />
+    </task>
+    <task id="LOCAL-00001" summary="Update">
+      <created>1551067908744</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1551067908744</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Update">
+      <created>1551069090040</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1551069090040</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Update">
+      <created>1551069294800</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1551069294800</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Update">
+      <created>1551069340095</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1551069340095</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Update">
+      <created>1551069358735</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1551069358735</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Update">
+      <created>1551138749051</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1551138749051</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Update" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update" />
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

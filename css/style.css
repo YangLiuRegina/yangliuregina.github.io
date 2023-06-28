@@ -30,12 +30,11 @@ Description: Portfolio/CV/Resume HTML Template
 20. Theme elements
 21. Slick
 22. Responsive
-23. Awards
 
 */
 @import url("https://fonts.googleapis.com/css?family=Rubik:300,300i,400,400i,500,500i,700,700i,900,900i&display=swap&subset=cyrillic");
 /*=================================================================*/
-/*                      BASE
+/*                      BASE                              
 /*=================================================================*/
 * {
   margin: 0;
@@ -80,7 +79,7 @@ img {
 }
 
 /*=================================================================*/
-/*                      TYPOGRAPHY
+/*                      TYPOGRAPHY                              
 /*=================================================================*/
 h1, h2, h3, h4, h5, h6 {
   color: #454360;
@@ -106,7 +105,7 @@ h4 {
 }
 
 a {
-  color: #ff8b4c;
+  color: #FF4C60;
   outline: 0;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
@@ -148,7 +147,7 @@ pre {
 }
 
 /*=================================================================*/
-/*                      PRELOADER
+/*                      PRELOADER                              
 /*=================================================================*/
 .infinity {
   width: 120px;
@@ -327,7 +326,7 @@ pre {
 }
 
 /*=================================================================*/
-/*                      HEADER
+/*                      HEADER                              
 /*=================================================================*/
 header.desktop-header-1 {
   color: #FFF;
@@ -336,7 +335,7 @@ header.desktop-header-1 {
   padding: 50px 40px 40px;
   position: fixed;
   left: 0;
-  overflow-y: scroll;
+  overflow-y: auto;
   overflow-x: hidden;
   height: 100vh;
   min-height: 100vh;
@@ -353,13 +352,7 @@ header.desktop-header-1 {
   transition: all 0.3s ease-in-out;
   /* === Vertical Menu === */
   /* === Submenu === */
-  -ms-overflow-style: none;
-  scrollbar-width: none;
 }
-header.desktop-header-1::-webkit-scrollbar {
-  display: none;
-}
-
 header.desktop-header-1.open {
   -webkit-transform: translateX(0);
   -moz-transform: translateX(0);
@@ -370,12 +363,8 @@ header.desktop-header-1.open {
 header.desktop-header-1 .vertical-menu {
   list-style: none;
   padding: 0;
-  /*margin-bottom: 130px;*/
-  /*margin-top: 130px;*/
-  display: flex;
-  flex-direction: column;
-  min-height: 100%;
-  justify-content: center;
+  margin-bottom: 130px;
+  margin-top: 130px;
 }
 header.desktop-header-1 .vertical-menu li.openmenu > a {
   color: #000;
@@ -596,9 +585,6 @@ header.mobile-header-1 {
   background: #353353;
   display: none;
   padding: 10px 0;
-  position: fixed;
-  z-index: 999;
-  width: 100%;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
@@ -786,7 +772,7 @@ header.mobile-header-2 .site-logo img {
 }
 
 /*=================================================================*/
-/*                      SECTIONS
+/*                      SECTIONS                             
 /*=================================================================*/
 main.content {
   margin-left: 290px;
@@ -833,12 +819,8 @@ section.home .intro {
   margin: auto;
   max-width: 540px;
   text-align: center;
-  position: absolute;
+  position: relative;
   z-index: 1;
-  top: 50%;
-  left: 0;
-  right: 0;
-  transform: translate(0, -50%);
 }
 section.home .intro h1 {
   color: #FFF;
@@ -885,7 +867,7 @@ section.home.light .social-icons li a:hover {
 }
 
 /*=================================================================*/
-/*                      PARALLAX SHAPES
+/*                      PARALLAX SHAPES                              
 /*=================================================================*/
 .parallax {
   position: absolute;
@@ -943,7 +925,7 @@ section.home.light .social-icons li a:hover {
 }
 
 /*=================================================================*/
-/*                      SKILLS
+/*                      SKILLS                              
 /*=================================================================*/
 .skill-item .skill-info h4 {
   font-size: 16px;
@@ -954,7 +936,7 @@ section.home.light .social-icons li a:hover {
 }
 
 /*=================================================================*/
-/*                      SERVICE
+/*                      SERVICE                              
 /*=================================================================*/
 .service-box {
   -webkit-transform: translateY(0);
@@ -977,7 +959,7 @@ section.home.light .social-icons li a:hover {
 }
 
 /*=================================================================*/
-/*                      PORTFOLIO
+/*                      PORTFOLIO                              
 /*=================================================================*/
 .portfolio-wrapper [class*=col-] {
   margin-top: 15px;
@@ -1115,7 +1097,7 @@ select.portfolio-filter-mobile {
 }
 
 /*=================================================================*/
-/*                      FACTS
+/*                      FACTS                              
 /*=================================================================*/
 .fact-item .details {
   margin-left: 60px;
@@ -1136,7 +1118,7 @@ select.portfolio-filter-mobile {
 }
 
 /*=================================================================*/
-/*                      PRICES
+/*                      PRICES                              
 /*=================================================================*/
 .price-item {
   padding: 30px 40px;
@@ -1191,7 +1173,7 @@ select.portfolio-filter-mobile {
 }
 
 /*=================================================================*/
-/*                      TESTIMONIALS
+/*                      TESTIMONIALS                              
 /*=================================================================*/
 .testimonials-wrapper {
   max-width: 700px;
@@ -1206,20 +1188,17 @@ select.portfolio-filter-mobile {
   overflow: hidden;
   height: 90px;
   width: 90px;
-  vertical-align: middle;
 }
 .testimonial-item .subtitle {
   color: #8B88B1;
   font-size: 14px;
-  line-height: normal;
-  margin-top: 5px;
 }
 .testimonial-item p {
   font-size: 16px;
 }
 
 /*=================================================================*/
-/*                      BLOG
+/*                      BLOG                              
 /*=================================================================*/
 .blog-item {
   overflow: hidden;
@@ -1298,7 +1277,7 @@ select.portfolio-filter-mobile {
 }
 
 /*=================================================================*/
-/*                      CLIENTS
+/*                      CLIENTS                              
 /*=================================================================*/
 .client-item {
   min-height: 50px;
@@ -1321,7 +1300,7 @@ select.portfolio-filter-mobile {
 }
 
 /*=================================================================*/
-/*                      CONTACT
+/*                      CONTACT                              
 /*=================================================================*/
 .contact-info {
   background-image: url("../images/map.svg");
@@ -1335,7 +1314,7 @@ select.portfolio-filter-mobile {
 }
 
 /*=================================================================*/
-/*                      HELPER
+/*                      HELPER                              
 /*=================================================================*/
 .help-block.with-errors {
   color: red;
@@ -1488,7 +1467,7 @@ footer.footer.light {
 }
 
 /*=================================================================*/
-/*                      DARK MODE
+/*                      DARK MODE                              
 /*=================================================================*/
 body.dark {
   color: #FFF;
@@ -2230,19 +2209,18 @@ body.dark footer.footer {
 }
 
 .slick-dots li {
-  width: 15px;
+  width: 10px;
   height: 6px;
   margin: 0 5px;
-  vertical-align: middle;
 }
 
 .slick-dots li.slick-active {
-  width: 15px;
+  width: 20px;
   height: 6px;
 }
 
 .slick-dots li button {
-  width: 15px;
+  width: 10px;
   height: 6px;
   padding: 0;
 }
@@ -2252,8 +2230,7 @@ body.dark footer.footer {
   border-radius: 3px;
   opacity: 1;
   height: 6px;
-  width: 15px;
-  transition: all 1s;
+  width: 20px;
 }
 
 .slick-dots li button:before {
@@ -2262,11 +2239,8 @@ body.dark footer.footer {
   border-radius: 3px;
   opacity: 1;
   height: 6px;
-  width: 15px;
-  transition: all 1s;
+  width: 10px;
 }
-
-
 
 /*=================================================================*/
 /*                      RESPONSIVE SETTINGS
@@ -2465,17 +2439,3 @@ body {
 }
 
 /*# sourceMappingURL=style.css.map */
-
-/*=================================================================*/
-/*                      AWARDS SETTINGS
-/*=================================================================*/
-.double-column-left {
-  flex: 1;
-}
-
-.double-column-right {
-  list-style-type: none;
-  flex: 0 0 150px;
-  text-align: right;
-  align-self: center;
-}

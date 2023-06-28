@@ -32,7 +32,7 @@ $(window).on('load', function() {
       2000
     ];
     var fallbackValue = "200ms";
-
+  
     $(".blog-item.wow").each(function(index) {
       $(this).attr("data-wow-delay", typeof dynamicDelay[index] === 'undefined' ? fallbackValue : dynamicDelay[index] + "ms");
     });
@@ -40,44 +40,32 @@ $(window).on('load', function() {
     /*=========================================================================
      Isotope
      =========================================================================*/
-    // $('.portfolio-filter').on( 'click', 'li', function() {
-    //     var filterValue = $(this).attr('data-filter');
-    //     $container.isotope({ filter: filterValue });
-    // });
+    $('.portfolio-filter').on( 'click', 'li', function() {
+        var filterValue = $(this).attr('data-filter');
+        $container.isotope({ filter: filterValue });
+    });
 
     // change is-checked class on buttons
-    $('#load-news').on('click', function() {
-        $('#hidden-news').animate({height: 'toggle'});
-        if ($(this).text() === "Hide") {
-          $(this).text("Load more");
-        } else {
-          $(this).text("Hide");
-        }
-    })
-
     $('.portfolio-filter').each( function( i, buttonGroup ) {
         var $buttonGroup = $( buttonGroup );
         $buttonGroup.on( 'click', 'li', function() {
             $buttonGroup.find('.current').removeClass('current');
-            $(this).addClass('current');
-            var target = $('.portfolio-wrapper div' + $(this).attr('data-filter'));
-            $('.portfolio-wrapper div').not(target).animate({height: 'hide', opacity: 0});
-            target.animate({height: 'show', opacity: 1});
+            $( this ).addClass('current');
         });
     });
-    //
-    // var $container = $('.portfolio-wrapper');
-    // $container.imagesLoaded( function() {
-    //   $('.portfolio-wrapper').isotope({
-    //       // options
-    //       itemSelector: '[class*="col-"]',
-    //       percentPosition: true,
-    //       masonry: {
-    //           // use element for option
-    //           columnWidth: '[class*="col-"]'
-    //       }
-    //   });
-    // });
+
+    var $container = $('.portfolio-wrapper');
+    $container.imagesLoaded( function() {
+      $('.portfolio-wrapper').isotope({
+          // options
+          itemSelector: '[class*="col-"]',
+          percentPosition: true,
+          masonry: {
+              // use element for option
+              columnWidth: '[class*="col-"]'
+          }
+      });
+    });
 
     var bolbyPopup = function(){
       /*=========================================================================
@@ -108,7 +96,7 @@ $(window).on('load', function() {
             markup: '<div class="mfp-iframe-scaler">'+
                       '<div class="mfp-close"></div>'+
                       '<iframe class="mfp-iframe" frameborder="0" allowfullscreen></iframe>'+
-                    '</div>',
+                    '</div>', 
 
             patterns: {
               youtube: {
@@ -153,63 +141,63 @@ $(window).on('load', function() {
       });
     }
 
-    // bolbyPopup();
+    bolbyPopup();
 
     /*=========================================================================
      Infinite Scroll
      =========================================================================*/
-    // var curPage = 1;
-    // var pagesNum = $(".portfolio-pagination").find("li a:last").text();   // Number of pages
-    //
-    // $container.infinitescroll({
-    //     itemSelector: '.grid-item',
-    //     nextSelector: '.portfolio-pagination li a',
-    //     navSelector: '.portfolio-pagination',
-    //     extraScrollPx: 0,
-    //     bufferPx: 0,
-    //     maxPage: 6,
-    //     loading: {
-    //         finishedMsg: "No more works",
-    //         msgText: '',
-    //         speed: 'slow',
-    //         selector: '.load-more',
-    //     }
-    // },
-    // // trigger Masonry as a callback
-    // function( newElements ) {
-    //
-    //   var $newElems = $( newElements );
-    //   $newElems.imagesLoaded(function(){
-    //     $newElems.animate({ opacity: 1 });
-    //     $container.isotope( 'appended', $newElems );
-    //   });
-    //
-    //   bolbyPopup();
-    //
-    //   // Check last page
-    //   curPage++;
-    //   if(curPage == pagesNum) {
-    //     $( '.load-more' ).remove();
-    //   }
-    //
-    // });
-    //
-    // $container.infinitescroll( 'unbind' );
-    //
-    // $( '.load-more .btn' ).on('click', function() {
-    //   $container.infinitescroll( 'retrieve' );
-    //   // display loading icon
-    //   $( '.load-more .btn i' ).css('display', 'inline-block');
-    //   $( '.load-more .btn i' ).addClass('fa-spin');
-    //
-    //   $(document).ajaxStop(function () {
-    //     setTimeout(function(){
-    //            // hide loading icon
-    //       $( '.load-more .btn i' ).hide();
-    //     }, 1000);
-    //   });
-    //   return false;
-    // });
+    var curPage = 1;
+    var pagesNum = $(".portfolio-pagination").find("li a:last").text();   // Number of pages
+
+    $container.infinitescroll({
+        itemSelector: '.grid-item',
+        nextSelector: '.portfolio-pagination li a',
+        navSelector: '.portfolio-pagination',
+        extraScrollPx: 0,
+        bufferPx: 0,
+        maxPage: 6,
+        loading: {
+            finishedMsg: "No more works",
+            msgText: '',
+            speed: 'slow',
+            selector: '.load-more',
+        }
+    },
+    // trigger Masonry as a callback
+    function( newElements ) {
+
+      var $newElems = $( newElements );
+      $newElems.imagesLoaded(function(){  
+        $newElems.animate({ opacity: 1 });
+        $container.isotope( 'appended', $newElems );
+      });
+
+      bolbyPopup();
+
+      // Check last page
+      curPage++;
+      if(curPage == pagesNum) {
+        $( '.load-more' ).remove();
+      }
+
+    });
+
+    $container.infinitescroll( 'unbind' );
+
+    $( '.load-more .btn' ).on('click', function() {
+      $container.infinitescroll( 'retrieve' );
+      // display loading icon
+      $( '.load-more .btn i' ).css('display', 'inline-block');
+      $( '.load-more .btn i' ).addClass('fa-spin');
+
+      $(document).ajaxStop(function () {
+        setTimeout(function(){
+               // hide loading icon
+          $( '.load-more .btn i' ).hide();
+        }, 1000);
+      });
+      return false;
+    });
 
     /* ======= Mobile Filter ======= */
 
@@ -218,12 +206,22 @@ $(window).on('load', function() {
       // get filter value from option value
       var filterValue = this.value;
       // use filterFn if matches value
-      $('.portfolio-filter').find('.current').removeClass('current');
-      $('.portfolio-filter').find(`[data-filter='${this.value}']`).addClass('current');
-      var target = $('.portfolio-wrapper div' + this.value);
-      $('.portfolio-wrapper div').not(target).animate({height: 'hide', opacity: 0});
-      target.animate({height: 'show', opacity: 1});
+      filterValue = filterFns[ filterValue ] || filterValue;
+      $container.isotope({ filter: filterValue });
     });
+
+    var filterFns = {
+      // show if number is greater than 50
+      numberGreaterThan50: function() {
+        var number = $(this).find('.number').text();
+        return parseInt( number, 10 ) > 50;
+      },
+      // show if name ends with -ium
+      ium: function() {
+        var name = $(this).find('.name').text();
+        return name.match( /ium$/ );
+      }
+    };
 });
 
 $(document).on('ready', function() {
@@ -236,7 +234,7 @@ $(document).on('ready', function() {
       dots: true,
       arrows: false,
       autoplay: true,
-      autoplaySpeed: 10000
+      autoplaySpeed: 3000
     });
 
 });
@@ -247,7 +245,6 @@ $(function(){
     /*=========================================================================
             Mobile Menu Toggle
     =========================================================================*/
-
     $('.menu-icon button').on( 'click', function() {
         $('header.desktop-header-1, main.content, header.mobile-header-1').toggleClass('open');
     });
@@ -286,9 +283,9 @@ $(function(){
     /*=========================================================================
      Parallax layers
      =========================================================================*/
-     if ($('.parallax').length > 0) {
+     if ($('.parallax').length > 0) { 
       var scene = $('.parallax').get(0);
-      var parallax = new Parallax(scene, {
+      var parallax = new Parallax(scene, { 
         relativeInput: true,
       });
     }
@@ -298,7 +295,7 @@ $(function(){
      =========================================================================*/
     $(".text-rotating").Morphext({
         // The [in] animation type. Refer to Animate.css for a list of available animations.
-        animation: "fadeIn",
+        animation: "bounceIn",
         // An array of phrases to rotate are created based on this separator. Change it if you wish to separate the phrases differently (e.g. So Simple | Very Doge | Much Wow | Such Cool).
         separator: ",",
         // The delay between the changing of each phrase in milliseconds.
@@ -329,13 +326,13 @@ $(function(){
     /*=========================================================================
      Progress bar animation with Waypoint JS
      =========================================================================*/
-    if ($('.skill-item').length > 0) {
+    if ($('.skill-item').length > 0) { 
       var waypoint = new Waypoint({
         element: document.getElementsByClassName('skill-item'),
         handler: function(direction) {
-
+          
           $('.progress-bar').each(function() {
-            var bar_value = $(this).attr('aria-valuenow') + '%';
+            var bar_value = $(this).attr('aria-valuenow') + '%';                
             $(this).animate({ width: bar_value }, { easing: 'linear' });
           });
 
@@ -379,28 +376,13 @@ $(function(){
     /*=========================================================================
             Scroll to Top
     =========================================================================*/
-    var lastScrollTop = 0;
     $(window).scroll(function() {
-      if ($(this).scrollTop() >= 350) {        // If page is scrolled more than 50px
-          $('#return-to-top').fadeIn();    // Fade in the arrow
-      } else {
-          $('#return-to-top').fadeOut();   // Else fade out the arrow
-      }
-
-      var nowScrollTop = $(this).scrollTop();
-      if(Math.abs(lastScrollTop - nowScrollTop) >= 50){
-        if ($('.mobile-header-1').css('display') === 'block' && nowScrollTop > lastScrollTop){
-          // SCROLLING DOWN
-          $('.mobile-header-1').animate({opacity: 0}, 1)
+        if ($(this).scrollTop() >= 350) {        // If page is scrolled more than 50px
+            $('#return-to-top').fadeIn(200);    // Fade in the arrow
         } else {
-          // ACTION ON
-          // SCROLLING UP
-          $('.mobile-header-1').animate({opacity: 1}, 1)
+            $('#return-to-top').fadeOut(200);   // Else fade out the arrow
         }
-        lastScrollTop = nowScrollTop;
-      }
     });
-
     $('#return-to-top').on('click', function(event) {     // When arrow is clicked
       event.preventDefault();
         $('body,html').animate({

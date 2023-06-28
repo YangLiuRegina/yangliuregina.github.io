@@ -230,9 +230,6 @@
 .icon-login:before {
   content: "\e066";
 }
-.icon-kattis:before {
-  content: "\e900";
-}
 .icon-logout:before {
   content: "\e065";
 }
